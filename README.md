@@ -2,8 +2,8 @@
 
 Search dog and cat food ingredients. Also view calories, brands and urls.
 
-You could filer by brand, food name and ingredients.
-You could specify lists of included and excluded entities.
+You could filter by brand, food name and ingredients.
+You could specify lists of included and excluded things.
 Four files with pet food data are provided:
 
 - `dog.dry` has dry dog food data.
@@ -19,7 +19,7 @@ python3 findFood.py -h
 ```
 
 To select all dry dog food with word instinct in brand name
-(e.g. Nature's Variety Instinct) that do not contain liver:
+(such as Nature's Variety Instinct) that do not contain liver:
 ```
 python3 findFood.py dog.dry -b instinct -ix liver
 ```
@@ -34,7 +34,7 @@ To see all cat food by Purina Muse or Purina Beyond that has vitamin A, vitamin 
 ### Matching.
 
 Before matching we change everything into a lower case, to avoid case-related mismatches.
-Match is very simple - it succeeds when a brand, name, ingredient or their part that are defined on a command line is a substring of a appropriate field in food data.
+Match is very simple - it succeeds when a brand, name, ingredient or their part (defined on a command line) is a substring of an appropriate field in food data.
 E.g. 'instinct' (from -n list) matches 'Instinct Boost Grain Free ...' food name.
 
 ### Filtering.
