@@ -16,7 +16,7 @@ Four files with pet food data are provided:
 
 - `dog.dry` has dry dog food data.
 - `dog.wet` has wet and canned dog food data.
-- `cat.dry` has cat dog food data.
+- `cat.dry` has dry cat food data.
 - `cat.wet` has wet and canned cat food data.
 
 To run `findFood.py` you need at least Python 3.8. (Python 3.7 or below would not work).
